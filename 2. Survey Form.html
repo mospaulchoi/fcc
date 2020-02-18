@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>NUGA-OMC Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background: linear-gradient(rgba(0, 0, 139, 0.5), rgba(0, 0, 139, 0.5)),
+          url("http://www.akomnews.com/wp1/wp-content/uploads/2017/12/%ED%95%9C%EC%95%BD%EC%9E%AC.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+      }
+
+      #title {
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      #description {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+
+      #survey-form {
+        box-sizing: border-box;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+        border-radius: 5px;
+        padding: 0.5rem 3.5rem;
+        background: darkblue;
+        opacity: 0.9;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #survey-form {
+          width: 100%;
+          padding: 0.5rem 1.5rem;
+        }
+      }
+
+      .form-group {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+      }
+
+      .form-control {
+        box-sizing: border-box;
+        width: 100%;
+        height: 2.5rem;
+        padding: 0.5rem 0.5rem;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      #role {
+        margin-bottom: -1.5rem;
+      }
+
+      #recommend {
+        margin-bottom: -1.5rem;
+      }
+
+      #feature {
+        margin-bottom: -1.5rem;
+      }
+
+      #improved {
+        margin-bottom: -1.5rem;
+      }
+
+      #suggestions {
+        margin-bottom: -1.5rem;
+      }
+
+      #comment {
+        box-sizing: border-box;
+        width: 100%;
+        height: 7rem;
+        padding: 0.5rem 0.5rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      #submit {
+        box-sizing: border-box;
+        width: 100%;
+        height: 2.5rem;
+        padding: 10px 10px;
+        border: 1px solid green;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        background-color: #009933;
+        color: white;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">NUGA Oriental Medical Clinic Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the clinic!</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label><br>
+          <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required><br>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label><br>
+          <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required><br>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional)</label><br>
+          <input id="number" type="number" name="number" class="form-control" placeholder="Age" min="0" max="150"><br>
+        </div>
+        <div class="form-group">
+          <p id="role">Which option best describes your current role?</p><br>
+          <select name="role" id="dropdown" class="form-control">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="ft-job">Full Time Job</option>
+            <option value="ft-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Perfer not to say</option>
+            <option value="other">Other</option>
+          </select><br>
+        </div>
+        <div class="form-group">
+          <p id="recommend">Would you recommend NUGA OMC to a friend?</p><br>
+          <input type="radio" name="recommend" value="definitely" class="input-radio">Definitely<br>
+          <input type="radio" name="recommend" value="maybe" class="input-radio">Maybe<br>
+          <input type="radio" name="recommend" value="not-sure" class="input-radio">Not sure<br>
+        </div>
+        <div class="form-group">
+          <p id="feature">What is your favorite feature of NUGA OMC?</p><br>
+          <select name="feature" id="dropdown-2" class="form-control">
+            <option disabled selected value>Select an option</option>
+            <option value="acupuncture">Acupuncture</option>
+            <option value="herbal-medicine">Herbal Medicine</option>
+            <option value="warm-atmosphere">Warm Atmosphere</option>
+            <option value="helpful-advice">Helpful Advice</option>
+          </select><br>
+        </div>
+        <div class="form-group">
+          <p id="improved">What would you like to see improved? (Check all that apply)</p><br>
+          <input type="checkbox" name="imporved" value="Clinical Facilities" class="input-checkbox">Clinical Facilities <br>
+          <input type="checkbox" name="imporved" value="Hospitality" class="input-checkbox">Hospitality <br>
+          <input type="checkbox" name="imporved" value="Informative Advice" class="input-checkbox">Informative Advice <br>
+          <input type="checkbox" name="imporved" value="Patient Care" class="input-checkbox">Patient Care <br>
+          <input type="checkbox" name="imporved" value="Feedback" class="input-checkbox">Feedback <br>
+          <input type="checkbox" name="imporved" value="Acupuncture" class="input-checkbox">Acupuncture <br>
+          <input type="checkbox" name="imporved" value="Herbal Medicine" class="input-checkbox">Herbal Medicine <br>
+          <input type="checkbox" name="imporved" value="Home Page" class="input-checkbox">Home Page <br>
+          <input type="checkbox" name="imporved" value="Communication" class="input-checkbox">Communication <br>
+          <input type="checkbox" name="imporved" value="Advertising" class="input-checkbox">Advertising <br>
+        </div>
+        <div class="form-group">
+          <p id="suggestions">Any comments or suggestions?</p><br>
+          <textarea id="comment" class="input-textarea" name="comment" placeholder="Enter your comment here ..."></textarea><br>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+</html>

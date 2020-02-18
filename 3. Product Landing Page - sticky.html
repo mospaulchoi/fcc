@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioChaga</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0px;
+        width: 100%;
+        background-color: white;
+      }
+
+      #header {
+        display: flex;
+        flex-direction: row;
+        background: white;
+        width: 100%;
+        padding-top: 10px 0;
+        justify-content: center;
+        box-sizing: border-box;
+        align-items: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #header {
+          flex-direction: column;
+        }
+      }
+
+      #header-img {
+        padding-right: 20px;
+      }
+
+      #title {
+        text-align: center;
+        padding-left: 20px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #title {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      #main-title {
+        line-height: 1.2;
+        margin-bottom: 0;
+        color: red;
+      }
+
+      #sub-title {
+        line-height: 1.2;
+        margin-top: 0;
+        color: blue;
+      }
+
+      #nav-bar {
+        display: block;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 0;
+        background: white;
+        position: sticky;
+        top: 0;
+      }
+
+      .target-link {
+        margin-top: -80px;
+        padding-top: 80px;
+      }
+
+      main {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media only screen and (max-width: 600px; ) {
+        main {
+          width: 100%;
+        }
+      }
+
+      iframe {
+        max-width: 560px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #product-price {
+        display: grid;
+        box-sizing: border-box;
+        grid-template-columns: auto auto auto;
+        grid-gap: 4px;
+        padding: 4px;
+        background-color: white;
+        border: 1px solid blue;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #product-price {
+          display: block;
+          align-content: center;
+        }
+      }
+
+      section>div {
+        background-color: lightgreen;
+        height: 280px;
+        padding: 10px;
+        border: 1px solid blue;
+      }
+
+      section>div>img {
+        height: 100px;
+      }
+
+      section>div>p {
+        height: 180px;
+      }
+
+      footer {
+        display: block;
+        text-align: right;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+      }
+
+      @media only screen and (max-width: 600px; ) {
+        footer {
+          width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <div>
+        <img id="header-img" src="http://biochaga.ru/t/v1121/images/logo_.png" alt="BioChaga logo">
+      </div>
+      <div id="title">
+        <h1 id="main-title">Biochaga | Chaga extract "Ecotsvet"</h1><br>
+        <h2 id="sub-title">Freeze-dried dry extracts from Siberian Chaga Mushroom</h2>
+      </div>
+    </header>
+    <nav id="nav-bar">
+      <a href="#header">Home / </a>
+      <a href="#features">Features / </a>
+      <a href="#how-works">How it works? / </a>
+      <a href="#product-price-title">Product and Price / </a>
+      <a href="#payment-delivery">Payment and Delivery / </a>
+      <a href="#contacts">Contacts </a><br>
+    </nav>
+    <main>
+
+      <section id="features" class="target-link">
+        <h2>Features</h2>
+        <ul>
+          <li>It has a positive effect in the fight against cancer and tumors.</li>
+          <li>Helps treat psoriasis.</li>
+          <li>Calms the nervous system.</li>
+          <li>It has a healing effect against various diseases of the gastrointestinal tract.</li>
+          <li>Actively stimulates the immune system.</li>
+        </ul>
+      </section><br>
+      <section id="how-works" class="target-link">
+        <h2>How it works?</h2>
+        <iframe id="video" height="315" src="https://www.youtube.com/embed/0Q2dGq6tISc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section><br><br><br>
+      <h2 id="product-price-title" class="target-link">Product and Price</h2>
+      <section id="product-price">
+        <div>
+          <img src="http://biochaga.ru/thumb/2/N3PHHvuJ-485NWNETbyCqg/200r190/d/extract-chagi-rus.jpg" alt="Chaga sublimated extract, black">
+          <p id="img-1"><b>Chaga sublimated extract, black.<br>Label in Russian<br><span style="color:red">1,300 rub.</span></b></p>
+        </div>
+        <div>
+          <img src="http://biochaga.ru/thumb/2/yGZom5kenf1ouhdz08MdAQ/200r190/d/chaga-extract-ru-10.jpg" alt="Chaga sublimated extract, black">
+          <p id="img-2"><b>Sublimated chaga extract - 1kg.<br>Annual course.<br>Recommended!<br><span style="color:red">13,000 rub.</span></b></p>
+        </div>
+        <div>
+          <img src="http://biochaga.ru/thumb/2/6fcw1h9t0xrVK61QVEPJfQ/200r190/d/chaga-extarct-1.jpg" alt="Chaga sublimated extract, black">
+          <p id="img-3"><b>Chaga extract freeze-dried.<br>Powerful antioxidant!<br>Chromogenic complex 53%!<br>Label in English<br><span style="color:red">1,300 rub.</span></b></p>
+        </div>
+      </section><br>
+      <section id="payment-delivery" class="target-link">
+        <h2>Payment and Delivery</h2>
+        <p>For Moscow:<br>
+          For buyers in Moscow, our goods can be delivered the next day or they can be picked up on the day of order, by agreement.<br><br>
+          Delivery in Moscow: 500 rub.<br><br>
+          Pickup:<br> Our courier will deliver your order free of charge to the Planernaya metro station. Pickup is possible until 23.00.<br><br>
+          Orders with delivery in Moscow are accepted strictly until 21.00! An order received later than this time will be delivered the next day!
+        </p>
+      </section><br>
+      <section id="contacts" class="target-link">
+        <h2>Contacts</h2>
+        <p>LLC "Baikal Grasses" <br>
+          Irkutsk, st. Kultukskaya, house 46 <br><br>
+          Representative in Moscow: <br><br>
+          LLC "Darotsvet" <br>
+          125424, Moscow, Stratonavtov passage <br>
+          d.11 building 1 <br><br>
+          +7 919 965-59-28 <br>
+          +7 915 103-40-39 <br><br>
+          sales@baikalherbs.ru <br>
+        </p>
+      </section>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Enter your email address ..." required><br>
+        <input id="submit" type="submit" name="submit" value="Submit">
+      </form>
+
+    </main>
+    <footer id="footer">
+      <p><b>Privacy Terms Contact</b></p>
+      <p><b>&copy;2020 BioChaga</b></p>
+    </footer>
+  </body>
+
+</html>
