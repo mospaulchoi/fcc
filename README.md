@@ -1,2 +1,1 @@
-# fcc
-free code camp projects
+freeCodeCamp - Responsive Web Design Projects
